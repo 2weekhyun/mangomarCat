@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.navbar ul.navbar_gnb { 
+  margin-left:16%; text-align:center;}
+.navbar ul.navbar_gnb > li { display:inline-block ;} 
+.navbar ul.navbar_gnb > li > a { text-align:left;
+  display:block; line-height:60px; 
+  padding:0 30px 0 17px; color:#000; }
+
+  .trigger {  
+    display:block; width:40px; height:40px;
+    float:right; margin-top:10px; background:transparent;
+    border:none;
+    cursor: pointer;
+    }
+    .ico-bar { position:relative; display:block; width:22px; height:2px; 
+      border-radius:1px; background:#000; transition:0.3s }
+    .ico-bar:nth-child(1) { top:-3px }
+    .ico-bar:nth-child(3) { top:3px }
+  
+  .trigger.open .ico-bar:nth-child(1){ top:2px; transform: rotate(45deg);}
+  .trigger.open .ico-bar:nth-child(2){ width:0 }
+  .trigger.open .ico-bar:nth-child(3){ top:-2px; transform: rotate(-45deg);} 
+
+  .gnb { position:fixed; top:0; right:-250px; width:250px; background:#2d2d2d; }
+  .navbar ul.navbar_gnb { 
+    margin-left:0; text-align:left;}
+  .navbar ul.navbar_gnb > li { display:block ;} 
+  .navbar ul.navbar_gnb > li > a { color:#fff; border-bottom:1px solid #474747 }
+
+.logo {
+  position: relative;
+  width: 130px;
+  height: 45px;
+  left: 10px;
+}
+
+.google1 {
+  position: relative;
+  top: 18px;
+  float: left;
+  width: 22.5px;
+  height: 22.5px;
+  margin-right: 10px;
+}
+
+.gnb_logo {
+  position: relative;
+  top: 7px;
+  width: 45px;
+  height: 35px;
+}
+
+.list_tab { display:flex; }
+.list_tab li { flex:1; text-align: center;}
+.list_tab li a { display:block; line-height:48px; font-size:18px; text-decoration: none; color: #000;}
+.list_tab li a.on { font-weight:700;}
+.list_tab li a.on:after { display:block; content:''; width:100%; height:4px; background:#000;}
+
+li { list-style: none; }
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.find{
+  background: url(../img/149852.png)no-repeat center center / 30%;
+  text-indent: -9999px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#timer {
+text-align: center;
+}
+
+#timer div {
+  display: inline-block;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#timer div span {
+  position: relative;
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.pm {
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.pm2 {
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+}
+
+.drawtime {
+  display: block;
+  text-align: center;
+  color: #FF4D00;
+}
+
+.login_btn {
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.name4 {
+  flex: 1;
+  text-align: center;
+}
+
+.tag3 { display: flex; }
+
+.name3 {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.name3 p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.name3 a {
+  font-weight: 500;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+.foot1 {
+  position: relative;
+  font-weight: 600;
+  left: 30px;
+}
+
+.foot2 {
+  position: relative;
+  left: 30px;
+  font-size: 13px;
+}
+
+.foot3 {
+  position: relative;
+  left: 30px;
+  font-size: 14px;
+}
+
+.footlogo {
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.foot4 {
+  position: relative;
+  left: 30px;
+  font-size: 10px;
+  color: #868686;
+}
+
+.foot3 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.foot4 p {
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 70px;
+}
+
+#popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 1;
+}
+
+#popup.hide {
+  display: none;
+}
+
+#popup.has-filter {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+#popup .content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
+
+.content p {
+  font-size: 25px;
+}
+
+.pb1 {
+  font-size: 20px;
+  margin: auto;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.menu-active {
+  background: #F4F4F4;
+  color: #000;
+}
